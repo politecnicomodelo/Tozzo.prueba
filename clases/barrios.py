@@ -6,4 +6,3 @@ class Barrio (Lugar):
 
     def CantidadPoblacion(self):
         return self.poblacion
-
