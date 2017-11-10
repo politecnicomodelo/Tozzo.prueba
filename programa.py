@@ -3,6 +3,29 @@ from clases.ciudad import Ciudad
 from clases.provincia import Provincia
 from clases.pais import Pais
 from clases.continente import Continente
+import pymysql
+
+db=pymysql.connect(host="127.0.0.1",user="root",password="alumno",db="mydb", autocommit=True)
+
+def extraerdatosdelabase():
+    c=db.cursor()
+    c.execute("select* from barrio;")
+    for item in c:
+        nuevo_barrio=Barrio()
+        nuevo_barrio.setNombre(item[3])
+        return(nuevo_barrio.nombre)
+
+print(extraerdatosdelabase())
+
+
+
+
+
+
+
+
+
+
 
 
 un_barrio=Barrio()
