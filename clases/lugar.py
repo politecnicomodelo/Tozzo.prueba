@@ -15,3 +15,6 @@ class Lugar (object):
     def AgregarCoordenada(self, coordenada):
         self.lista_coordenadas.append(coordenada)
 
+    def devolver_nombre(self):
+        return self.nombre
+

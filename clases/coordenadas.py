@@ -5,6 +5,6 @@ class Coordenadas(object):
     def setLatitud(self, latitud):
         self.latitud=latitud
 
-    def setLongitud(self.longitud):
+    def setLongitud(self,longitud):
         self.longitud=longitud
 

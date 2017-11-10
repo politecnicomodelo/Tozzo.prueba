@@ -1,4 +1,4 @@
-from lugar import Lugar
+from .lugar import Lugar
 class Barrio (Lugar):
     poblacion=0
     def __init__(self):

@@ -1,6 +1,7 @@
-from barrios import Barrio
+from .barrios import Barrio
+from .lugar import Lugar
 
-class Ciudad(Barrio):
+class Ciudad(Lugar):
     lista_barrio=[]
 
     def __init__(self):
@@ -10,6 +11,7 @@ class Ciudad(Barrio):
         self.lista_barrio.append(barrio)
 
     def Calcular_habitantes_ciudad(self):
+        cant=0
         for item in self.lista_barrio:
             cant=cant+item.CantidadPoblacion()
         return cant
